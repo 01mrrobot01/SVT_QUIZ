@@ -1,0 +1,44 @@
+<!-- HBLF_Mrrobot -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sur le système nerveux</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Page d'introduction -->
+    <div id="introContainer" class="container">
+        <h1>Bienvenue: Quiz sur le système nerveux : GD.GSR</h1>
+        <label for="name">Votre nom s'il vous plaît :</label>
+        <div class="text-input">
+            <input type="text" id="name" placeholder="Entrez votre nom">
+            <label for="name">Nom >></label>
+        </div>
+        <div class="neon__button">
+            <button id="startButton"><span></span><span></span><span></span><span></span>Commencer</button>
+        </div>
+    </div>
+
+    <!-- Conteneur du quiz (masqué initialement) -->
+    <div id="quizContainer" class="container" style="display: none;">
+        <h1>Quiz sur le système nerveux</h1>
+        <div id="questionContainer"></div>
+        <div class="neon__button">
+            <button id="submitButton"><span></span><span></span><span></span><span></span>Submit</button>
+        </div>
+    </div>
+
+    <!-- Page de résultat (masquée initialement) -->
+    <div id="resultContainer" class="container" style="display: none;">
+        <div id="Alert">
+            <h1>Votre résultat sera envoyé au maître !</h1>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

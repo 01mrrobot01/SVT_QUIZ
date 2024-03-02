@@ -1,0 +1,178 @@
+body {
+  display: flex;
+  background: linear-gradient(#000000, #002a46, #000000);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "DM Mono", monospace;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  overflow: auto;
+}
+
+.container {
+  background-color: rgba(4, 82, 95, 0.8); /* Metallic background color with 80% opacity */
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.text-input {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.text-input input[type="text"] {
+  display: inline-block;
+  width: calc(100% - 120px);
+  height: 40px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 10px 10px 10px 100px;
+  transition: all 0.1s ease-out;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent input background */
+  color: #ffffff; /* Text color in white */
+}
+
+.text-input input[type="text"] + label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  line-height: 40px;
+  color: #ffffff; /* Label text color in white */
+  border-radius: 3px 0 0 3px;
+  padding: 0 20px;
+  background: radial-gradient(#039aff, #4603ff);
+  transform: translateZ(0) translateX(0);
+  transition: all 0.3s ease-in;
+  transition-delay: 0.2s;
+  width: 100px;
+}
+
+.text-input input[type="text"]:focus + label {
+  transform: translateY(-120%) translateX(0%);
+  border-radius: 3px;
+  transition: all 0.1s ease-out;
+}
+
+.text-input input[type="text"]:focus {
+  padding: 10px;
+  transition: all 0.3s ease-out;
+  transition-delay: 0.2s;
+}
+
+.neon__button button {
+  position: relative;
+  display: inline-block;
+  padding: 15px 20px;
+  margin: 20px 0;
+  color: #000000; /* Button text color in black */
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin-right: 30px;
+  font-size: 1.5em;
+  background-color: #039aff; /* Button background color */
+  border: none;
+  cursor: pointer;
+}
+
+.neon__button button:hover {
+  color: #ffffff; /* Button text color on hover in white */
+  box-shadow: 0 0 5px #51e70b, 0 0 25px #001277, 0 0 50px #03f47b, 0 0 200px #1303ee;
+}
+
+.neon__button button span {
+  position: absolute;
+  display: block;
+}
+
+.neon__button button span:nth-child(1),
+.neon__button button span:nth-child(2),
+.neon__button button span:nth-child(3),
+.neon__button button span:nth-child(4) {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #6a00b1);
+}
+
+.neon__button button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  animation: animate1 1s linear infinite;
+}
+
+.neon__button button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+.neon__button button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.neon__button button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+.quizcontainer {
+  color: black;
+}
+
+@keyframes animate1 {
+  0%, 100% {
+      left: -100%;
+  }
+  50%, 75% {
+      left: 100%;
+  }
+}
+
+@keyframes animate2 {
+  0%, 100% {
+      top: -100%;
+  }
+  50%, 75% {
+      top: 100%;
+  }
+}
+
+@keyframes animate3 {
+  0%, 100% {
+      right: -100%;
+  }
+  50%, 75% {
+      right: 100%;
+  }
+}
+
+@keyframes animate4 {
+  0%, 100% {
+      bottom: -100%;
+  }
+  50%, 75% {
+      bottom: 100%;
+  }
+}

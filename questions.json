@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "index": 1,
+      "question": "Quel est le message qu'utilise le système nerveux?",
+      "choices": [
+        "L'influx nerveux",
+        "Les hormones",
+        "Les synapses"
+      ],
+      "answer": "L'influx nerveux"
+    },
+    {
+      "index": 2,
+      "question": "En profondeur, la moelle épinière contient...",
+      "choices": [
+        "La substance grise",
+        "La substance blanche",
+        "La substance rouge"
+      ],
+      "answer": "La substance grise"
+    },
+    {
+      "index": 3,
+      "question": "Le sommeil paradoxal est caractérisé par...",
+      "choices": [
+        "Un sommeil semblable à l'état de veille",
+        "Des signes vitaux abaissés",
+        "Peu de rêves"
+      ],
+      "answer": "Un sommeil semblable à l'état de veille"
+    },
+    {
+      "index": 4,
+      "question": "La dopamine est impliqué dans...",
+      "choices": [
+        "La maladie de Parkinson",
+        "La maladie d'Alzheimer",
+        "N'est pas impliqué dans des maladies"
+      ],
+      "answer": "La maladie de Parkinson"
+    },
+    {
+      "index": 5,
+      "question": "L'aire visuelle est surtout située dans...",
+      "choices": [
+        "Le lobe temporal",
+        "Le lobe occipital",
+        "Le lobe frontal"
+      ],
+      "answer": "Le lobe occipital"
+    }
+  ]
+}
