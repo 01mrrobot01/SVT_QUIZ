@@ -1,6 +1,9 @@
 body {
   display: flex;
-  background: linear-gradient(#000000, #002a46, #000000);
+  background-image: url('https://media.giphy.com/media/YbS3KkZSFGUkB4XO1X/giphy.gif');
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image */  
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -38,8 +41,6 @@ body {
   border-radius: 3px;
   padding: 10px 10px 10px 100px;
   transition: all 0.1s ease-out;
-  background-color: rgba(255, 255, 255, 0.1); /* Transparent input background */
-  color: #ffffff; /* Text color in white */
 }
 
 .text-input input[type="text"] + label {
@@ -49,7 +50,7 @@ body {
   bottom: 0;
   height: 40px;
   line-height: 40px;
-  color: #ffffff; /* Label text color in white */
+  color: rgb(0, 0, 0); /* Text color in black */
   border-radius: 3px 0 0 3px;
   padding: 0 20px;
   background: radial-gradient(#039aff, #4603ff);
@@ -84,14 +85,13 @@ body {
   overflow: hidden;
   margin-right: 30px;
   font-size: 1.5em;
-  background-color: #039aff; /* Button background color */
-  border: none;
-  cursor: pointer;
 }
 
 .neon__button button:hover {
-  color: #ffffff; /* Button text color on hover in white */
+  background: #039aff;
+  color: black;
   box-shadow: 0 0 5px #51e70b, 0 0 25px #001277, 0 0 50px #03f47b, 0 0 200px #1303ee;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgb(0, 0, 0));
 }
 
 .neon__button button span {
@@ -138,7 +138,7 @@ body {
 }
 
 .quizcontainer {
-  color: black;
+  color: black; /* Set text color for quiz container */
 }
 
 @keyframes animate1 {
