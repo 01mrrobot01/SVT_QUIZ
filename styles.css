@@ -1,6 +1,7 @@
 body {
   display: flex;
-  background-image: url('https://media.giphy.com/media/YbS3KkZSFGUkB4XO1X/giphy.gif');
+  /* background-image: url('https://media.giphy.com/media/YbS3KkZSFGUkB4XO1X/giphy.gif');*/
+  background-image: url('https://media.giphy.com/media/11i03wSzIuNXiw/giphy.gif?cid=790b7611yd2gkufl4s44jalccadekzsbq2wbrrbampgerukv&ep=v1_gifs_search&rid=giphy.gif&ct=g');
   background-size: cover; /* Ensure the image covers the entire background */
   background-repeat: no-repeat; /* Prevent the image from repeating */
   background-position: center; /* Center the image */  
@@ -16,13 +17,18 @@ body {
 }
 
 .container {
-  background-color: rgba(4, 82, 95, 0.8); /* Metallic background color with 80% opacity */
+  /* background-color: rgba(4, 82, 95, 0.8);  Metallic background color with 80% opacity */
+  background-image: url('https://media.giphy.com/media/jeMmNKhDE1dJjAvpYU/giphy.gif?cid=790b7611bx9ykedld1628yq1xey9zo97odgs4likva2keg10&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image */ 
   max-width: 800px;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgb(255, 0, 0);
   margin-bottom: 20px;
   position: relative;
+  opacity: 0.86; /* Adjust the opacity value as needed */
 }
 
 .text-input {
@@ -41,6 +47,8 @@ body {
   border-radius: 3px;
   padding: 10px 10px 10px 100px;
   transition: all 0.1s ease-out;
+  background-color: rgba(255, 0, 0, 0.5); /* Red background color with 50% opacity */
+  color: #ffffff; /* Text color in white */
 }
 
 .text-input input[type="text"] + label {
@@ -53,7 +61,7 @@ body {
   color: rgb(0, 0, 0); /* Text color in black */
   border-radius: 3px 0 0 3px;
   padding: 0 20px;
-  background: radial-gradient(#039aff, #4603ff);
+  background: radial-gradient(#ff0303, #ff5f03);
   transform: translateZ(0) translateX(0);
   transition: all 0.3s ease-in;
   transition-delay: 0.2s;
@@ -77,7 +85,8 @@ body {
   display: inline-block;
   padding: 15px 20px;
   margin: 20px 0;
-  color: #000000; /* Button text color in black */
+  color: #ffffff; /* Button text color in white */
+  background-color: #ff0000; /* Red background color */
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s;
@@ -88,10 +97,9 @@ body {
 }
 
 .neon__button button:hover {
-  background: #039aff;
-  color: black;
-  box-shadow: 0 0 5px #51e70b, 0 0 25px #001277, 0 0 50px #03f47b, 0 0 200px #1303ee;
-  -webkit-box-reflect: below 1px linear-gradient(transparent, rgb(0, 0, 0));
+  color: #ff0000; /* Button text color on hover in red */
+  background-color: transparent; /* Transparent background color on hover */
+  box-shadow: 0 0 5px #5c4a4a, 0 0 25px #f3ea67, 0 0 50px #ffbb00, 0 0 200px #ffd900; /* Red box shadow on hover */
 }
 
 .neon__button button span {
@@ -106,8 +114,8 @@ body {
   position: absolute;
   display: block;
   width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #6a00b1);
+  height: 7px;
+  background: linear-gradient(90deg, transparent, #740202, #e46262);
 }
 
 .neon__button button span:nth-child(1) {
