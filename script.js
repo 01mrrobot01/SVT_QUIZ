@@ -1,4 +1,8 @@
 //HBLF_Mrrobot
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});//c'eest un anti-copieur, voir styles.css pour mieux comprendre
+
 document.addEventListener('DOMContentLoaded', function() {
     const introContainer = document.getElementById('introContainer');
     const startButton = document.getElementById('startButton');
@@ -68,12 +72,15 @@ document.addEventListener('DOMContentLoaded', function() {
         const currentQuestion = questions[currentQuestionIndex];
         questionContainer.innerHTML = '';
         answerStartTime = Date.now();
-
+    
         const questionTitle = document.createElement('h3');
         questionTitle.textContent = `Question ${currentQuestionIndex + 1}: ${currentQuestion.question}`;
         questionContainer.appendChild(questionTitle);
-
-        currentQuestion.choices.forEach(choice => {
+    
+        // Mélanger les choix de la question actuelle
+        const shuffledChoices = shuffleArray(currentQuestion.choices);
+    
+        shuffledChoices.forEach(choice => {
             const label = document.createElement('label');
             const radio = document.createElement('input');
             radio.type = 'radio';
@@ -85,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
             questionContainer.appendChild(document.createElement('br'));
         });
     }
+    
 
     function resetQuiz() {
         score = 0;
@@ -101,6 +109,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function shuffleArray(array) {
-        return array.sort(() => Math.random() - 0.5);
-    }
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }    
 });
